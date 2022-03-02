@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie search website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <meta name="description" content="This is the description">
+    <title></title>
+    <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+  <!-- header section ends -->  
+      <form name="login">
+      <div class="login-box">
+     <h1>Login</h1>
+     <p>username = 1234 and password = 1234</p>
+      <div class="textbox">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Username" name="userid">
+      </div>
+
+     <div class="textbox">
+     <i class="fas fa-lock"></i>
+     <input type="password" placeholder="Password" name="pswrd">
+     </div>
+     <div class="button">
+     <input type="button" style="font-size: 25px; font-weight: bolder;" onclick="check(this.form)" value="Login"/> 
+     </div>
+     </div>
+     </form>
+     <script>
+        function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "1234" && form.pswrd.value == "1234") {
+                    window.open('index.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+    </script>
+     </body>
+</html>
